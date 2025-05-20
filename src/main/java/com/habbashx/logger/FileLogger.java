@@ -17,6 +17,22 @@ import java.util.ArrayList;
 
 import static org.apache.commons.csv.CSVFormat.DEFAULT;
 
+/**
+ * Handles logging operations to a CSV file for maintaining records of application events such as successes
+ * and failures. This logger writes logs in a structured format with pre-defined headers and includes
+ * support for retrieving all log entries as an in-memory table.
+ *
+ * The log file is automatically managed within the class, and new log entries are appended to
+ * the existing file. Timestamps are recorded in a consistent format to aid in tracking events.
+ *
+ * The class includes methods for:
+ * - Logging success events.
+ * - Logging failure events.
+ * - Retrieving all logged entries as an ArrayList of string arrays.
+ *
+ * Internally, the class crafts log messages with associated metadata like the URL, timestamp,
+ * log level, and message content.
+ */
 public class FileLogger {
 
     private static final String[] HEADERS = {"URL","Log Date","Log Level","Log Message"};

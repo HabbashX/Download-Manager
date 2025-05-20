@@ -1,6 +1,14 @@
 package com.habbashx.animation;
 
-class ArrowProgressAnimation extends ProgressAnimation{
+/**
+ * Implementation of a progress animation that displays a progress bar with an arrow
+ * indicator showing the current progress. This class visualizes progress by building
+ * a bar with characters and dynamically updates it in real time.
+ *
+ * The progress bar includes information such as percentage of completion, current
+ * internet download speed, and downloaded data relative to the total file size.
+ */
+class ArrowProgressAnimation extends ProgressAnimation {
 
     @Override
     public void printProgressBar(int progress, int barLength, double internetSpeed, long downloadedBytes ,int fileSize) {

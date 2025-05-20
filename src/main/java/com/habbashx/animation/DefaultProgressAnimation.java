@@ -1,5 +1,19 @@
 package com.habbashx.animation;
 
+/**
+ * Provides a concrete implementation of a progress animation, displaying a progress bar
+ * with detailed information about the progress percentage, current internet download speed,
+ * and downloaded data relative to the total file size. The progress bar uses '#' to represent
+ * the completed portion and '-' to represent the remaining portion, dynamically updating in real time.
+ *
+ * This class is an implementation of the abstract {@code ProgressAnimation} class, and it overrides
+ * the {@code printProgressBar} method to provide the functionality for visualizing progress as
+ * described above. The progress bar is displayed in the following format:
+ *
+ * - A dynamic progress bar visualization that adjusts based on the progress percentage and total bar length.
+ * - Display of the internet speed in appropriate units (KB/s, MB/s, or GB/s) based on the current speed value.
+ * - Information on downloaded megabytes relative to the total file size.
+ */
 class DefaultProgressAnimation extends ProgressAnimation {
 
     @Override

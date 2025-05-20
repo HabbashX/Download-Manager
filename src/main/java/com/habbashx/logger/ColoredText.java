@@ -1,5 +1,12 @@
 package com.habbashx.logger;
 
+/**
+ * The ColoredText class provides ANSI color codes as constants to style text output on supported terminals.
+ * These constants can be used to add color to console or terminal text.
+ *
+ * The class contains pre-defined colors, such as red, bright red, bright yellow, lime green, and gray.
+ * It also includes a reset code to revert the text formatting back to default.
+ */
 class ColoredText {
 
     public static final String RESET = "\u001b[0m";
